@@ -6,7 +6,7 @@
                     <span>{{ item.time | formatDate }} </span>
                 </div>
                 <div class="timeline-img">
-                    <avatar style="border-radius: 50%; background: pink;" username="Heng Zhao Qing" :src="item.img" :size="60" ></avatar>
+                    <avatar style="border-radius: 50%; background: white;" username="Heng Zhao Qing" :src="item.img" :size="60" ></avatar>
                 </div>
                 <div class="timeline-content">
                     <div class="content-body">
@@ -57,7 +57,7 @@ export default {
     },
     filters: {
       formatDate(time) {
-        return parseTime(time, '{y}年{m}月{d} {h}:{i}')
+        return parseTime(time, '{d}/{m}/{y} {h}:{i}')
       }
     },
     mounted() {
